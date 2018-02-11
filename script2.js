@@ -1,6 +1,6 @@
 var map;
 //var icon = "http://path/to/icon.png";
-var json_res = "http://localhost/Wolf-summer-trainee-challenge/restaurants.json";
+var json_res = "https://github.com/pvanh80/anotherWeb/blob/master/restaurants.json";
 var json_ord = "http://localhost/Wolf-summer-trainee-challenge/orders.json";
 var infowindow = new google.maps.InfoWindow();
 function initialize() {
