@@ -1,6 +1,7 @@
 var map;
 var json_res = "https://pvanh80.github.io/anotherWeb/restaurants.json";
 var infowindow = new google.maps.InfoWindow();
+
 function initialize() {
 
     var mapProp = {
@@ -20,11 +21,10 @@ function initialize() {
 	        var marker = new google.maps.Marker({
 	            position: latLng,
 	            map: map,
-	            // icon: icon,
 	            title: data.name
 	        });
 
-	        var details = data.name + ",</br>" + data.phone_number; 
+	        var details = "<span style='font-weight:bold'>" + data.name + " Restaurant</span></br>Tel: " + data.phone_number ; 
 
 	        bindInfoWindow(marker, map, infowindow, details);
 
