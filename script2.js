@@ -24,7 +24,7 @@ function initialize() {
 	            title: data.name
 	        });
 
-	        var details = data.name + ",</br>" + data.phone_number + ". Ordered: "; 
+	        var details = data.name + ",</br>" + data.phone_number; 
 
 	        bindInfoWindow(marker, map, infowindow, details);
 
