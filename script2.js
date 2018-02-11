@@ -36,7 +36,6 @@ function initialize() {
 
 function bindInfoWindow(marker, map, infowindow, strDescription) {
     google.maps.event.addListener(marker, 'click', function () {
-    	display_order("112278359460");
         infowindow.setContent(strDescription);
         infowindow.open(map, marker);
     });
